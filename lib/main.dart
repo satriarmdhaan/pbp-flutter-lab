@@ -69,11 +69,10 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              if (_counter % 2 == 1) ...[
+              if (_counter % 2 == 1)
                 const Text('GANJIL', style: TextStyle(color: Colors.blue))
-              ] else ...[
-                const Text('GENAP', style: TextStyle(color: Colors.red))
-              ],
+              else 
+                const Text('GENAP', style: TextStyle(color: Colors.red)),
               Text(
                 '$_counter',
                 style: Theme.of(context).textTheme.headline4,
