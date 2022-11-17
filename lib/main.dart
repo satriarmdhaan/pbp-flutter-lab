@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:counter_7/drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,24 +25,15 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
+  final String title = 'Flutter Demo Home Page';
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -50,8 +42,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   bool _visible = false;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -65,13 +55,14 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
+        drawer: drawer(context),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               if (_counter % 2 == 1)
                 const Text('GANJIL', style: TextStyle(color: Colors.blue))
-              else 
+              else
                 const Text('GENAP', style: TextStyle(color: Colors.red)),
               Text(
                 '$_counter',
@@ -87,27 +78,25 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Visibility(
-                visible: _visible,
-                child: FloatingActionButton(
-                    onPressed: () {
-
-                      if (_counter == 1) {
-                        setState(() {
-                          _visible = false;
-                          _counter = 0;
-                        });
-                      }
-                      else if (_counter > 1) {
-                        setState(() {
-                          _counter--;
-                          _visible = true;
-                        });
-                      }
-                    },
-                    tooltip: 'Decrement',
-                    heroTag: null,
-                    child: const Icon(Icons.remove),
-                  ),
+                    visible: _visible,
+                    child: FloatingActionButton(
+                      onPressed: () {
+                        if (_counter == 1) {
+                          setState(() {
+                            _visible = false;
+                            _counter = 0;
+                          });
+                        } else if (_counter > 1) {
+                          setState(() {
+                            _counter--;
+                            _visible = true;
+                          });
+                        }
+                      },
+                      tooltip: 'Decrement',
+                      heroTag: null,
+                      child: const Icon(Icons.remove),
+                    ),
                   ),
                   FloatingActionButton(
                     onPressed: () {

@@ -1,3 +1,4 @@
+# Tugas 7
 # Stateless Widget & Stateful Widget
 Stateless Widget adalah widget yang tidak dapat dirubah atau tidak akan pernah berubah.
 Stateful Widget adalah widget yang dapat berubah atau dinamis.
@@ -57,3 +58,20 @@ else if (_counter > 1) {
 }
 ```
 - Kelima, membuat kondisional dengan ternary operator untuk merender text GANJIL atau GENAP sesuai angka dan mengganti warna text dengan `style`.
+
+# Tugas 8
+
+# Perbedaan `Navigator.push` dan `Navigator.pushReplacement`
+`Navigator.push` berfungsi untuk menambahkan rute ke dalam stack, sedangkan `Navigator.pushReplacement` berfungsi untuk menambahkan route kedalam stack dan menghapus rute-rute sebelumnya.
+
+# Widget apa saja yang dipakai dalam proyek kali ini
+- `Drawer`: Berfungsi untuk membuat layar samping tambahan.
+- `ListTile`: Berfungsi untuk menampilkan halaman-halaman yang ada pada aplikasi.
+
+# Jenis-jenis event yang ada pada Flutter
+- onPressed
+- onHover
+- onSaved
+- onChange
+
+# Cara kerja Navigator dalam 
