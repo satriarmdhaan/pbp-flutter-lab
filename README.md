@@ -74,4 +74,11 @@ else if (_counter > 1) {
 - onSaved
 - onChange
 
-# Cara kerja Navigator dalam 
+# Cara kerja `Navigator` dalam "mengganti" halaman dari aplikasi Flutter
+Halaman pada aplikasi Flutter disusun seperti stack yang saling menumpuk. Apabila seorang pengguna ingin beralih ke halaman lain, maka aplikasi akan menambahkan rute baru kedalam stack.
+
+# Cara Implementasi
+- Menambahkan `formbudget.dart` untuk pengisian form.
+- Membuat file baru `model.dart` untuk menyimpan data-data dari `formbudget.dart` kedalam objek model.
+- Membuat `budgetdata.dart` untuk menampilkan isi data dari form yang telah dibuat sebelumnya pada `formbudget.dart`.
+- Membuat `drawer.dart` untuk menampilkan halaman apa saja yang ingin ditampilkan pada layar samping tambahan.
