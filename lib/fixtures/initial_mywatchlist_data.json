@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "House Of The Dragons",
+        "watched": "Sudah",
+        "rating": 5,
+        "release_date": "10 September 2022",
+        "review": "Filmnya bagus dan memiliki alur cerita yang menarik."
+    },
+    {
+        "id": 2,
+        "title": "Mencuri Raden Saleh",
+        "watched": "Belum",
+        "rating": 4,
+        "release_date": "15 September 2022",
+        "review": "Filmnya memiliki alur cerita yang menarik dan menegangkan."
+    },
+    {
+        "id": 3,
+        "title": "SPY x FAMILY",
+        "watched": "Belum",
+        "rating": 5,
+        "release_date": "9 April 2022",
+        "review": "Filmnya bagus dan ramah ditonton bersama keluarga."
+    },
+    {
+        "id": 4,
+        "title": "Kimi No Nawa(Your Name)",
+        "watched": "Sudah",
+        "rating": 5,
+        "release_date": "26 Agustus 2016",
+        "review": "Memiliki alur cerita yang kompleks dan menyentuh hati."
+    },
+    {
+        "id": 5,
+        "title": "Avengers: Endgame",
+        "watched": "Sudah",
+        "rating": 5,
+        "release_date": "24 April 2019",
+        "review": "CGI nya bagus dan filmnya tidak membosankan."
+    },
+    {
+        "id": 6,
+        "title": "Top Gun: Maverick",
+        "watched": "Sudah",
+        "rating": 5,
+        "release_date": "24 Mei 2022",
+        "review": "Pembuatan filmnya totalitas karena banyak stunt yang dilakukan secara nyata."
+    },
+    {
+        "id": 7,
+        "title": "No Time To Die",
+        "watched": "Sudah",
+        "rating": 4,
+        "release_date": "29 September 2021",
+        "review": "Filmnya menegangkan dan hanyut akan emosi."
+    },
+    {
+        "id": 8,
+        "title": "Incantation",
+        "watched": "Sudah",
+        "rating": 5,
+        "release_date": "18 Maret 2022",
+        "review": "Filmnya seram dan mengerikan dengan konsep film documentary."
+    },
+    {
+        "id": 9,
+        "title": "Stranger Things",
+        "watched": "Belum",
+        "rating": 5,
+        "release_date": "15 Juli 2016",
+        "review": "Plot ceritanya bagus dan memunculkan rasa penasaran."
+    },
+    {
+        "id": 10,
+        "title": "Thor: Love and Thunder",
+        "watched": "Belum",
+        "rating": 3,
+        "release_date": "06 Juli 2022",
+        "review": "Filmnya kurang menarik dan tidak menggambarkan film-film dari Marvel."
+    }
+]

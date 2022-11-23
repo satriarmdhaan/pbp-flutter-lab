@@ -2,6 +2,7 @@ import 'package:counter_7/main.dart';
 import 'package:counter_7/formbudget.dart';
 import 'package:counter_7/budgetdata.dart';
 import 'package:flutter/material.dart';
+import 'package:counter_7/watchlist.dart';
 
 Widget drawer(BuildContext context) {
   return Drawer(
@@ -34,6 +35,16 @@ Widget drawer(BuildContext context) {
             );
           },
         ),
+        ListTile(
+          title: const Text('My Watch List'),
+          onTap: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: ((context) => const MyWatchListPage())),
+              );
+          },
+        )
       ],
     ),
   );
