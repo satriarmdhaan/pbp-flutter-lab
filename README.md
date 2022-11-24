@@ -82,3 +82,19 @@ Halaman pada aplikasi Flutter disusun seperti stack yang saling menumpuk. Apabil
 - Membuat file baru `model.dart` untuk menyimpan data-data dari `formbudget.dart` kedalam objek model.
 - Membuat `budgetdata.dart` untuk menampilkan isi data dari form yang telah dibuat sebelumnya pada `formbudget.dart`.
 - Membuat `drawer.dart` untuk menampilkan halaman apa saja yang ingin ditampilkan pada layar samping tambahan.
+
+# Tugas 9
+
+# Pengambilan data JSON tanpa membuat model terlebih dahulu
+data JSON dapat dipangil tanpa membuat model terlebih dahulu dengan memasukan data JSON kedalam map. Pengambilan data JSON tanpa memakai model akan lebih sulit dalam memetakan data pada map.
+
+# Widget apa saja yang dipakai dalam proyek ini
+- `ListView.builder`: Membuat Array Widget ListTile.
+- `FutureBuilder`: Membuat Widget secara otomatis menyesuaikan dengan interaksi `[Future]`.
+- `TextButton`: Membuat Tombol Text.
+
+# Mekanisme Pengambilan data dari JSON hingga menuju tampilan
+Mengambil data dengan menggunakan `rootBundle` dan `loadString` melalui directory dari file JSON. Lalu, file JSON kemudian akan dibentuk sebagai objek dan disimpan didalam file model yang kemudian akan dipanggil oleh program untuk ditampilkan.
+
+# Cara Implementasi
+Membuat file Watchlist untuk menampilkan list judul film dan details.dart untuk menampilkan rincian film secara mendetail.

@@ -63,11 +63,9 @@ Future<List<WatchlistModel>> readWatchlistModel() async{
             );
           } else if(snapshot.hasData) {
             var items = snapshot.data!;
-            return ListView.separated(
+            return ListView.builder(
               itemBuilder: ((context, index) =>
                 WatchListNavigator(data: items[index])),
-              separatorBuilder: ((context, index) => 
-                const SizedBox(height: 5.0)),
               itemCount: items.length,
             );
           }
